@@ -1,101 +1,388 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Privacy Policy - Thin Launcher</title>
-  <meta name="description" content="How Thin Launcher collects, uses and protects your information.">
-  <style>
-    body {
-      font-family: Arial, Helvetica, sans-serif;
-      line-height: 1.6;
-      color: #222;
-      background: #fff;
-      margin: 0;
-      padding: 0;
-    }
-    main {
-      max-width: 760px;
-      margin: 0 auto;
-      padding: 24px 16px 48px;
-    }
-    h1 { font-size: 28px; margin-bottom: 4px; }
-    h2 { font-size: 20px; margin-top: 32px; border-bottom: 1px solid #e5e5e5; padding-bottom: 4px; }
-    .updated { color: #666; font-size: 14px; }
-    ul { padding-left: 22px; }
-    a { color: #5b3fa0; }
-    .note { background: #f5f2fb; border-left: 4px solid #5b3fa0; padding: 12px 16px; margin: 20px 0; }
-    footer { margin-top: 40px; font-size: 14px; color: #666; }
-  </style>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Thin Launcher — Privacy Policy &amp; Terms and Conditions</title>
+<meta name="description" content="How Thin Launcher collects, uses and protects your information, and the terms that govern using the app.">
+<style>
+  :root {
+    --dark: #2b2622;
+    --dark2: #000000;
+    --accent: #4a4238;
+    --text: #2a2a2a;
+    --body-text: #444444;
+    --muted: #999999;
+    --border: #eeeeee;
+    --bg: #ffffff;
+    --surface: #faf9f7;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    background: var(--surface);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+  }
+  .wrap {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 0 20px 64px;
+  }
+  header.hero {
+    background: linear-gradient(135deg, var(--dark), var(--dark2));
+    color: #ffffff;
+    padding: 48px 20px 40px;
+    margin-bottom: 32px;
+  }
+  header.hero .inner {
+    max-width: 760px;
+    margin: 0 auto;
+  }
+  header.hero h1 {
+    margin: 0 0 10px;
+    font-size: 28px;
+    font-weight: 700;
+  }
+  header.hero .meta {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.78);
+    margin: 2px 0;
+  }
+  nav.toc {
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 20px 24px;
+    margin-bottom: 36px;
+  }
+  nav.toc h2 {
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+    color: var(--accent);
+    margin: 0 0 12px;
+  }
+  nav.toc ol {
+    margin: 0;
+    padding-left: 20px;
+    columns: 2;
+    column-gap: 24px;
+    font-size: 14px;
+  }
+  nav.toc li { margin-bottom: 6px; break-inside: avoid; }
+  nav.toc a { color: var(--body-text); text-decoration: none; }
+  nav.toc a:hover { color: var(--accent); text-decoration: underline; }
+
+  section.doc-section {
+    background: var(--bg);
+    border-radius: 16px;
+    padding: 28px 28px 8px;
+    margin-bottom: 24px;
+    border: 1px solid var(--border);
+  }
+  h2.section-title {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--dark);
+    margin: 0 0 20px;
+    scroll-margin-top: 20px;
+  }
+  h3.heading {
+    font-size: 15.5px;
+    font-weight: 700;
+    color: var(--text);
+    margin: 22px 0 6px;
+    scroll-margin-top: 20px;
+  }
+  p.body-text {
+    font-size: 14.5px;
+    line-height: 1.7;
+    color: var(--body-text);
+    margin: 0 0 14px;
+  }
+  ul.bullets {
+    margin: 0 0 14px;
+    padding-left: 20px;
+  }
+  ul.bullets li {
+    font-size: 14.5px;
+    line-height: 1.7;
+    color: var(--body-text);
+    margin-bottom: 10px;
+  }
+  strong { color: var(--text); font-weight: 600; }
+  code {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    padding: 1px 5px;
+    font-size: 13px;
+  }
+  .contact-block {
+    font-size: 14.5px;
+    line-height: 1.9;
+    color: var(--body-text);
+  }
+  a.link { color: var(--accent); }
+  .footer-note {
+    font-size: 12.5px;
+    color: var(--muted);
+    font-style: italic;
+    line-height: 1.6;
+    text-align: center;
+    margin: 40px 0 0;
+  }
+  @media (max-width: 480px) {
+    nav.toc ol { columns: 1; }
+    section.doc-section { padding: 22px 18px 4px; }
+    header.hero { padding: 36px 16px 32px; }
+  }
+</style>
 </head>
 <body>
-  <main>
-    <h1>Privacy Policy</h1>
-    <p class="updated">Last updated: October 15, 2026</p>
 
-    <p>Thin Launcher ("we", "us", "our") is a minimal home-screen launcher app for Android and iOS. This Privacy Policy explains what information the app collects, how it is used, who it is shared with, and the choices you have. By using the app, you agree to this policy.</p>
+<header class="hero">
+  <div class="inner">
+    <h1>Privacy Policy &amp; Terms and Conditions</h1>
+    <p class="meta">Thin Launcher · Last updated: November 14, 2026</p>
+    <p class="meta">Simple App Works Ltd · Developer: Vathirajan.v · Governing jurisdiction: India</p>
+  </div>
+</header>
 
-    <h2>Who can use the app</h2>
-    <p>Thin Launcher does not require sign-up or an account. It is not directed at children, and we do not knowingly collect personal information from anyone under 13.</p>
+<div class="wrap">
 
-    <h2>Information we collect</h2>
-    <p><strong>Information you provide:</strong> none. There is no account, profile, or sign-in anywhere in the app.</p>
-    <p><strong>Information collected automatically:</strong></p>
-    <ul>
+  <nav class="toc" aria-label="Table of contents">
+    <h2>Privacy Policy</h2>
+    <ol>
+      <li><a href="#pp-1">Who we are</a></li>
+      <li><a href="#pp-2">Information we collect</a></li>
+      <li><a href="#pp-3">How we use this information</a></li>
+      <li><a href="#pp-4">Who we share information with</a></li>
+      <li><a href="#pp-5">Advertising and consent</a></li>
+      <li><a href="#pp-6">Data stored on your device</a></li>
+      <li><a href="#pp-7">App permissions</a></li>
+      <li><a href="#pp-8">Security</a></li>
+      <li><a href="#pp-9">Children's privacy</a></li>
+      <li><a href="#pp-10">Your choices and rights</a></li>
+      <li><a href="#pp-11">Changes to this policy</a></li>
+      <li><a href="#pp-12">Contact</a></li>
+    </ol>
+    <h2 style="margin-top:18px">Terms and Conditions</h2>
+    <ol>
+      <li><a href="#tc-1">Acceptance of terms</a></li>
+      <li><a href="#tc-2">Description of service</a></li>
+      <li><a href="#tc-3">Acceptable use</a></li>
+      <li><a href="#tc-4">Intellectual property</a></li>
+      <li><a href="#tc-5">Third-party advertising</a></li>
+      <li><a href="#tc-6">In-app purchases and billing</a></li>
+      <li><a href="#tc-7">No warranty</a></li>
+      <li><a href="#tc-8">Limitation of liability</a></li>
+      <li><a href="#tc-9">Changes to the app or these terms</a></li>
+      <li><a href="#tc-10">Governing law and jurisdiction</a></li>
+      <li><a href="#tc-11">Contact</a></li>
+    </ol>
+  </nav>
+
+  <section class="doc-section">
+    <h2 class="section-title">Privacy Policy</h2>
+
+    <h3 class="heading" id="pp-1">1. Who we are</h3>
+    <p class="body-text">
+      Thin Launcher ("we", "us", "our") is developed and operated by Simple App Works Ltd, with Vathirajan.v as
+      the app's developer. Thin Launcher is a minimal home-screen launcher app for Android. This Privacy Policy
+      explains what information the app collects, how it is used, who it is shared with, and the choices you
+      have. Thin Launcher does not require sign-up or an account anywhere in the app. By using the app, you
+      agree to this policy.
+    </p>
+
+    <h3 class="heading" id="pp-2">2. Information we collect</h3>
+    <p class="body-text"><strong>Information you provide:</strong> none. There is no account, profile, or sign-in anywhere in the app.</p>
+    <p class="body-text"><strong>Information collected automatically:</strong></p>
+    <ul class="bullets">
       <li>The list of apps installed on your device, read using Android's <code>QUERY_ALL_PACKAGES</code> permission. This is used only on your device, to let you pick which apps appear on your home screen ("Focus Apps"). It is never sent to us or anyone else.</li>
-      <li>Ads are shown by Google AdMob, which can collect device identifiers, the advertising ID, IP address and approximate location to show ads and, where permitted, personalized ads. On supported Android versions, AdMob also uses the Android Privacy Sandbox APIs (Topics, Attribution Reporting, and the Privacy Sandbox advertising ID) to select ad interest topics, measure ad conversions, and prevent fraud, as a more private alternative or complement to the classic advertising ID. See "Advertising" below.</li>
-      <li>If you buy Ad-Free, Pro, or send a tip, the purchase is processed by Google Play or the App Store. We never see your payment card details &mdash; we only receive the product ID and purchase status, used to unlock the feature you paid for.</li>
+      <li>Ads are shown by Google AdMob, which can collect device identifiers, the advertising ID, IP address and approximate location to show ads and, where permitted, personalized ads. On supported Android versions, AdMob also uses the Android Privacy Sandbox APIs (Topics, Attribution Reporting, and the Privacy Sandbox advertising ID) to select ad interest topics, measure ad conversions, and prevent fraud, as a more private alternative or complement to the classic advertising ID. See Section 5 below.</li>
+      <li>If you buy Ad-Free, Pro, or send a tip, the purchase is processed by Google Play Billing. We never see your payment card details — we only receive the product ID and purchase status, used to unlock the feature you paid for.</li>
     </ul>
 
-    <h2>How we use this information</h2>
-    <ul>
+    <h3 class="heading" id="pp-3">3. How we use this information</h3>
+    <ul class="bullets">
       <li>To let you choose which installed apps show on your home screen</li>
       <li>To show ads and, where allowed, personalized ads</li>
       <li>To unlock Ad-Free or Pro features after a purchase, and to restore them if you reinstall the app</li>
     </ul>
 
-    <h2>Who we share information with</h2>
-    <ul>
-      <li><strong>Google AdMob:</strong> shows ads in the app and processes the advertising data described above under its own privacy policy: <a href="https://policies.google.com/privacy">policies.google.com/privacy</a></li>
-      <li><strong>Google Play / Apple App Store:</strong> process your purchase. We do not receive or store your payment details.</li>
+    <h3 class="heading" id="pp-4">4. Who we share information with</h3>
+    <ul class="bullets">
+      <li><strong>Google AdMob:</strong> shows ads in the app and processes the advertising data described above under its own privacy policy: <a class="link" href="https://policies.google.com/privacy">policies.google.com/privacy</a></li>
+      <li><strong>Google Play:</strong> processes your purchase. We do not receive or store your payment details.</li>
     </ul>
-    <p>We do not sell your personal information. Thin Launcher has no backend server and no analytics SDK &mdash; we do not otherwise collect, store, or share your data.</p>
+    <p class="body-text">We do not sell your personal information. Thin Launcher has no backend server and no analytics SDK — we do not otherwise collect, store, or share your data.</p>
 
-    <h2>Advertising and consent</h2>
-    <p>The app shows ads through Google AdMob. Where the law requires it (for example in the European Economic Area and the United Kingdom), you will be asked for consent before personalized ads are shown, using Google's consent form. Buying Ad-Free or Pro removes ads entirely.</p>
+    <h3 class="heading" id="pp-5">5. Advertising and consent</h3>
+    <p class="body-text">
+      The app shows ads through Google AdMob to users who have not purchased Ad-Free or Pro. Where the law
+      requires it (for example in the European Economic Area and the United Kingdom), you will be asked for
+      consent before personalized ads are shown, using Google's consent form (via Google's User Messaging
+      Platform); you can revisit this choice at any time from Settings. Buying Ad-Free or Pro removes ads
+      entirely and stops the app from requesting further advertising data.
+    </p>
 
-    <h2>Data stored on your device</h2>
-    <p>Your Focus Apps selection, colour theme, search preference, and a local record of what you've purchased are stored only on your device (not on any server of ours, and not tied to an account). We have no way to access, change, or delete this data remotely. Uninstalling the app removes it.</p>
+    <h3 class="heading" id="pp-6">6. Data stored on your device</h3>
+    <p class="body-text">
+      Your Focus Apps selection, colour theme, search preference, and a local record of what you've purchased
+      are stored only on your device (not on any server of ours, and not tied to an account). We have no way to
+      access, change, or delete this data remotely. Uninstalling the app removes it.
+    </p>
 
-    <h2>App permissions</h2>
-    <p>Depending on your device, the installed app may request:</p>
-    <ul>
+    <h3 class="heading" id="pp-7">7. App permissions</h3>
+    <p class="body-text">Depending on your device, the installed app may request:</p>
+    <ul class="bullets">
       <li><strong>Query all apps:</strong> to list your installed apps so you can pick your Focus Apps (used on-device only, as above).</li>
       <li><strong>Internet:</strong> required to load ads and verify purchases.</li>
       <li><strong>Vibrate:</strong> for tap feedback.</li>
       <li><strong>Advertising ID and Android Privacy Sandbox access</strong> (AD_ID, Topics, Attribution Reporting): used by Google AdMob to show ads, measure ad performance, and, where you've consented, personalize ads.</li>
-      <li>A small number of other permissions (such as network-state checks, wake-lock, or storage access capped to older Android versions) are included by the ad or billing libraries the app uses, and are not actively used by any Thin Launcher feature.</li>
+      <li>A small number of other permissions (such as network-state checks, wake-lock, or foreground-service access) are included by the ad or billing libraries the app uses, and are not actively used by any Thin Launcher feature on its own.</li>
     </ul>
 
-    <h2>Security</h2>
-    <p>Because Thin Launcher has no account and no server, there is no central store of your personal data for us to protect or that could be breached. Data on your device is protected by your device's own operating system and storage security. Data sent to Google AdMob and Google Play/Apple App Store for ads and purchases is transmitted using industry-standard encryption (HTTPS/TLS).</p>
+    <h3 class="heading" id="pp-8">8. Security</h3>
+    <p class="body-text">
+      Because Thin Launcher has no account and no server, there is no central store of your personal data for
+      us to protect or that could be breached. Data on your device is protected by your device's own operating
+      system and storage security. Data sent to Google AdMob and Google Play for ads and purchases is
+      transmitted using industry-standard encryption (HTTPS/TLS).
+    </p>
 
-    <h2>Your choices and rights</h2>
-    <ul>
-      <li>Revoke any device permission at any time from your system settings. The default home launcher settings can be revoked at anytime</li>
-      <li>Uninstall the app to remove all locally stored data</li>
+    <h3 class="heading" id="pp-9">9. Children's privacy</h3>
+    <p class="body-text">
+      Thin Launcher is a general-audience app and is not directed at or marketed to children. We do not
+      knowingly collect personal information from anyone under 13 (or the equivalent minimum age in your
+      jurisdiction), in line with COPPA (US) and equivalent children's privacy laws.
+    </p>
+
+    <h3 class="heading" id="pp-10">10. Your choices and rights</h3>
+    <ul class="bullets">
+      <li>Revoke any device permission at any time from your system settings. Setting Thin Launcher as your default home launcher can be undone at any time from your device's Home app settings.</li>
+      <li>Uninstall the app to remove all locally stored data.</li>
+      <li>Manage AdMob's advertising data use through your device's ad settings (e.g. "Reset advertising ID" / "Opt out of ad personalization" on Android).</li>
     </ul>
-    <p>Depending on where you live, you may have additional rights under local privacy laws, such as the GDPR or the CCPA. To use them, contact us &mdash; though since we hold no personal data tied to you, there is typically nothing for us to provide, correct, or delete on our end.</p>
+    <p class="body-text">
+      Depending on where you live, you may have additional rights under local privacy laws, such as the GDPR,
+      the UK GDPR, or the CCPA — including the right to access, correct, delete, or object to the processing of
+      your personal data. We do not sell your personal information. To use these rights, contact us using the
+      details in Section 12 below — though since we hold no personal data tied to you on any server, there is
+      typically nothing for us to provide, correct, or delete on our end; requests relating to data collected
+      directly by Google AdMob should be directed to Google, and applicable ad opt-outs can be exercised through
+      your device's ad settings as described above.
+    </p>
 
-    <h2>Changes to this policy</h2>
-    <p>We may update this policy from time to time. We will change the "Last updated" date above when we do. If the changes are significant, we will tell you in the app.</p>
+    <h3 class="heading" id="pp-11">11. Changes to this policy</h3>
+    <p class="body-text">
+      We may update this policy from time to time. We will change the "Last updated" date above when we do. If
+      the changes are significant, we will tell you in the app.
+    </p>
 
-    <h2>Contact</h2>
-    <p class="note">Email: <strong><a href="mailto:simpleappworksltd@gmail.com">simpleappworksltd@gmail.com</a></strong></p>
+    <h3 class="heading" id="pp-12">12. Contact</h3>
+    <p class="contact-block">
+      Company: Simple App Works Ltd<br />
+      Developer: Vathirajan.v<br />
+      Email: <a class="link" href="mailto:simpleappworksltd@gmail.com">simpleappworksltd@gmail.com</a><br />
+      Jurisdiction: India
+    </p>
+  </section>
 
-    <footer>
-      <p>Thin Launcher is developed by Vathirajan.v.</p>
-    </footer>
-  </main>
+  <section class="doc-section">
+    <h2 class="section-title">Terms and Conditions</h2>
+
+    <h3 class="heading" id="tc-1">1. Acceptance of terms</h3>
+    <p class="body-text">
+      By using Thin Launcher, you agree to these Terms and Conditions and the Privacy Policy above. If you do
+      not agree, please do not use the app.
+    </p>
+
+    <h3 class="heading" id="tc-2">2. Description of service</h3>
+    <p class="body-text">
+      Thin Launcher is a minimalist Android home-screen launcher. It lets you choose a fixed set of apps to
+      show on your home screen — up to 7 on the free tier, or up to 11 with the one-time Pro purchase — with
+      everything else remaining a search away in your app drawer. The app also offers a choice of colour
+      themes, some unlockable via a rewarded ad or Pro. The app is supported by advertising served through
+      Google AdMob to users who have not purchased Ad-Free or Pro, and offers optional one-time in-app
+      purchases to remove ads, unlock Pro, or support the developer with a tip.
+    </p>
+
+    <h3 class="heading" id="tc-3">3. Acceptable use</h3>
+    <p class="body-text">
+      You agree to use Thin Launcher only for lawful purposes and in a way that does not infringe the rights
+      of, or restrict or inhibit the use and enjoyment of the app by, any third party. You agree not to reverse
+      engineer, decompile, or tamper with the app in a way intended to defraud the advertising or billing
+      systems it relies on.
+    </p>
+
+    <h3 class="heading" id="tc-4">4. Intellectual property</h3>
+    <p class="body-text">
+      The app design, colour themes, branding, and software within Thin Launcher are owned by Simple App Works
+      Ltd or used under license, and are protected by applicable intellectual property laws. You may use the
+      app for personal, non-commercial purposes only.
+    </p>
+
+    <h3 class="heading" id="tc-5">5. Third-party advertising</h3>
+    <p class="body-text">
+      Thin Launcher displays ads provided by Google AdMob to users who have not purchased Ad-Free or Pro. We do
+      not control, and are not responsible for, the content of third-party advertisements shown in the app.
+      Interactions with ads are governed by Google's own terms and policies.
+    </p>
+
+    <h3 class="heading" id="tc-6">6. In-app purchases and billing</h3>
+    <p class="body-text">
+      Thin Launcher offers optional one-time, non-subscription purchases: "Ad-Free" (removes ads), "Pro"
+      (raises the home-screen app limit to 11 and unlocks additional colour themes), and optional support
+      "tips" in a few fixed amounts. All payments are processed by Google Play, not by Simple App Works Ltd
+      directly, and are subject to Google's own payment terms, refund policies, and purchase-history tools.
+      "Ad-Free" and "Pro" are one-time purchases that apply to the store account they were purchased on; you
+      can restore them using the "Restore purchases" option in Settings if you reinstall the app or switch
+      devices while signed into the same Google account. Tips are separate, consumable purchases that do not
+      unlock any feature — they are simply a way to support the developer and are not refundable except as
+      required by Google Play's policies.
+    </p>
+
+    <h3 class="heading" id="tc-7">7. No warranty</h3>
+    <p class="body-text">
+      Thin Launcher is provided "as is" and "as available," without warranties of any kind, whether express or
+      implied, including but not limited to fitness for a particular purpose or uninterrupted, error-free
+      operation. Replacing your device's default home screen carries an inherent risk of unexpected behaviour
+      on some devices or Android versions; use the "Set as Default" step at your own discretion.
+    </p>
+
+    <h3 class="heading" id="tc-8">8. Limitation of liability</h3>
+    <p class="body-text">
+      To the fullest extent permitted by applicable law, Simple App Works Ltd shall not be liable for any
+      indirect, incidental, special, or consequential damages arising out of or related to your use of, or
+      inability to use, Thin Launcher.
+    </p>
+
+    <h3 class="heading" id="tc-9">9. Changes to the app or these terms</h3>
+    <p class="body-text">
+      We may modify, suspend, or discontinue Thin Launcher, or update these Terms, at any time. Material
+      changes to these Terms will be reflected by updating the "Last updated" date above. Continued use after
+      changes take effect constitutes your acceptance of the revised Terms.
+    </p>
+
+    <h3 class="heading" id="tc-10">10. Governing law and jurisdiction</h3>
+    <p class="body-text">
+      These Terms and the Privacy Policy above are governed by the laws of India. Any dispute arising out of
+      or in connection with these Terms or your use of Thin Launcher shall be subject to the exclusive
+      jurisdiction of the competent courts in India.
+    </p>
+
+    <h3 class="heading" id="tc-11">11. Contact</h3>
+    <p class="body-text">
+      Questions about these Terms can be directed to Simple App Works Ltd at the contact details in Section 12
+      of the Privacy Policy above.
+    </p>
+  </section>
+
+</div>
 </body>
 </html>
